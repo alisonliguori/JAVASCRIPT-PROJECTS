@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project 2: Functions</title>
+    <script src="JS/main.js"></script>
+</head>
+<body>
+
+    <h1>Project 2: Functions</h1>
+    <br>
+    <br>
+    <p>Box1:
+        <input type="text" id="box1" value="Coding is challenging...">
+    </p>
+    <br>
+    <p>Box2:
+        <input type="text" id="box2" value="but the good kind">
+    </p>
+    <br>
+
+    <button onclick="button_text()" id="text">
+        Click here!
+    </button>
+
+
+    <button onclick="showMessage()" id="text">
+        Click me!
+    </button>
+
+    <p id="test"> </p>
+
+
+    <!--
+Within the “Basic JavaScript Projects” folder, create a “Project2_functions” folder. Next create a “JS” folder within the newly created “Project2_functions” folder. Then within the “JS” folder, create a new JavaScript file and name it “main.js”.
+
+Write a function that includes assigning two variables and utilizes the document.getElementById method (as covered in the previous step of the course).
+
+Save the file.
+
+Within the “Project2_functions” folder, create a new HTML file and name it “index.html”.
+f
+
+Write out the basic HTML template.
+
+Utilize the script element and src attribute to link to your “main.js” file.
+
+
+
+Utilize the button element.
+
+Utilize a paragraph element and assign it the same id name as used in the document.getElementById method.
+
+Save the file.
+
+Successfully execute “index.html” in the browser-->
+
+
+
+
+
+</body>
+
+</html>
