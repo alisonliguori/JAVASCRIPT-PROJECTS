@@ -42,3 +42,10 @@ document.write(sent1, "<br>",  sent2)
 document.write("<br> <br>") //line breaks
 
 document.write(10*10) //10*10=100 web pg will print 100
+
+document.write("<br> <br>") //line breaks
+
+function showMessage(){
+    var str="Thanks for clicking me!";
+    document.getElementById("text").innerHTML=str;
+}
