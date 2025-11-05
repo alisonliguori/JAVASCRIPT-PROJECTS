@@ -33,11 +33,11 @@ document.write(2+2); //2+2 = 4 web pg will just show 4
 
 document.write("<br> <br>") //line breaks
 
-var sent1="I am anxious about my future."
+var sent1="This is the beginning of the string"
 document.write("<br> <br>") //line breaks
 
-var sent2="I just want to be happy."
-document.write(sent1, "<br>",  sent2)
+var sent2=" and this is the end of the string"
+document.write(sent1 + sent2)
 
 document.write("<br> <br>") //line breaks
 
