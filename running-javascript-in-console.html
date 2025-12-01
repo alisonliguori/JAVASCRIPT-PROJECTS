@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>Running JavaScript in Console</title>
+    </head>
+    <body>
+        <p id="globalVariables" onclick="global()">Global - click here</p>
+        <p id="localVariables" onclick="local()">Local - click here</p>
+        <hr> <!--horizontal rule tag adds a line on the web page that expands
+        from the left to the right sides-->
+        <p>In the console, assign string values to sentence1 and sentence2 variables. </p>
+        <p id="concat" onclick="concatenate()">Click here for a concatenated sentence</p>
+
+        <hr>
+        
+        <p>Use the console, to use the newCourse() function and the document.getElementById("displayCourse).innerHTML = ,...</p>
+        <p>then fill in "py" or "js" replacing "this" in "this.Course__". </p>
+        <button onclick="newCourse()"> Click here for new course</button>
+        <p id="displayCourse"></p>
+
+        <hr>
+        <p>Use the console to see your age based on the year you were born.</p>
+        <p>You can now write an if/or/else statment using your age.</p>
+        <p id="displayAge"></p>
+
+        <script>
+            let a=3; // Global variables (a & b) can be edited in the console
+            let b=4; // can be accessed from anywhere in the program
+
+            function global(){
+                result=a+b; // variable result.  Value is a+b
+                document.getElementById("globalVariables").innerHTML=
+                "Global variable a (" + a + ") plus global variable b (" + b + ") equals " + result;
+            }
+
+            function local(){
+                let c=4; // Local variables c & d can only be accessed within this function
+                let d=3; 
+                result=c+d; // variable result.  Value is x+y
+                document.getElementById("localVariables").innerHTML=
+                "Local variable c (" + c + ") plus local variable d (" + d + ") equals " + result;
+            }
+
+            // in console global variables a & b can be accessed and changed 
+            // in console local variables c & d cannot be accessed or changed
+            // to change local variables c & d, you must change them in the code above or 
+            // in console you have to change it in the code (copy & paste code into console)
+
+
+            // declare variables for console testing
+            let sentence1;
+            let sentence2;
+
+            function concatenate(){
+                let concatSent= sentence1.concat(sentence2);
+
+                // display result on webpage
+                document.getElementById("concat").innerHTML=concatSent;
+
+                //display result in console
+                console.log(concatSent);
+            }
+
+
+            // Course object constructor for console testing
+            function Course(Name, Type, Duration){
+                this.CourseName= "Today's course is: " + Name + "<br>";
+                this.CourseType= "Type: " + Type + "<br>";
+                this.CourseDur= "Course length: " + Duration + " hours";
+            }
+
+
+
+            let js = new Course("JavaScript", "Code", 55);
+            let py = new Course("Python", "Code", 90);
+
+            // Get user input to calculate age based on year
+            let year = prompt("Type in the year you were born");
+            let yearNow = new Date().getFullYear();
+            let age = Math.floor(yearNow - year); // math (use math) floor rounds down to nearest whole number
+
+
+            // Window methods 
+            window.alert("Window object!"); // creates alert box
+            window.open("https://www.google.com"); // opens new browser window with specified URL
+
+            // Window objects
+            console.log(window.innerHeight); // height of browser window
+            console.log(window.innerWidth);  // width of browser window
+        </script>
+</html>

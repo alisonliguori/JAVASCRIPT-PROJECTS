@@ -102,3 +102,13 @@ for (let f=2; f<10; f++) {
 }
 
 document.getElementById("Continue_Statement").innerHTML = text3;
+
+//While loop
+let count = " ";
+let q=0;
+while (q<10) {
+    count += "The count is " + q + "<br>";
+    q++;
+}
+
+document.getElementById("While_Loop").innerHTML = count;
